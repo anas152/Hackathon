@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -185,12 +186,12 @@ export default function Loan() {
             />
           </div>
 
-          <button
+          <Link to={"/Userinfo"}
             type="submit"
             className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700"
           >
             Submit Application
-          </button>
+          </Link>
         </form>
       </main>
 
